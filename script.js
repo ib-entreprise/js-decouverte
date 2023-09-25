@@ -56,15 +56,35 @@
 // }
 
 
-console.log("********************************************");
-console.log("********** EXECRICE 4**********************");
-console.log("********************************************");
+ 
+// console.log("********** EXECRICE 4**********************");
 
-let fois = prompt("donner un nombre");
-if(fois > 10){
-    console.log("Vous etes un peu trop gourmands");
-}else{
-    for(let i=1; i <= fois; i++){
-        console.log(i + " -> "+ i*2);
+// let fois = prompt("donner un nombre");
+// if(fois > 10){
+//     console.log("Vous etes un peu trop gourmands");
+// }else{
+//     for(let i=1; i <= fois; i++){
+//         console.log(i + " -> "+ i*2);
+//     }
+// }
+
+ 
+console.log("********** EXECRICE 5 **********************");
+
+let nombre = prompt("Choisissez un nombre ");
+let PairOrImpair = prompt("Pair taper '0' pour impair tappez '1 ");
+if(PairOrImpair == 0){
+    for(let i=0; i<= nombre; i++){
+        if(i % 2 == 0){
+            console.log(i);
+        }
     }
+}else if(PairOrImpair == 1){
+    for(let i=0; i<= nombre; i++){
+        if(!( i % 2 == 0)){
+            console.log(i);
+        }
+    }
+}else{
+    console.log("erreur de saisir. merci de relire les consignes !");
 }
