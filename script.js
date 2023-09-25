@@ -1,17 +1,17 @@
-console.log("********************************************");
-console.log("********** EXECRICE 2 **********************");
-console.log("********************************************");
+// console.log("********************************************");
+// console.log("********** EXECRICE 2 **********************");
+// console.log("********************************************");
 
-let age = prompt("quel age avez vous ?");
+// let age = prompt("quel age avez vous ?");
 
-if(age < 18){
-    console.log("vous etes mineurs");fit
-}else if(age <= 21){
-    console.log("hey ! vous etes majeur !");
-}
-else{
-    console.log("vous avez la mjourite internationnale ");
-}
+// if(age < 18){
+//     console.log("vous etes mineurs");
+// }else if(age <= 21){
+//     console.log("hey ! vous etes majeur !");
+// }
+// else{
+//     console.log("vous avez la mjourite internationnale ");
+// }
 
 
 
@@ -54,3 +54,17 @@ else{
 // }else{
 //     console.log("les trois  variables sont differentes");
 // }
+
+
+console.log("********************************************");
+console.log("********** EXECRICE 4**********************");
+console.log("********************************************");
+
+let fois = prompt("donner un nombre");
+if(fois > 10){
+    console.log("Vous etes un peu trop gourmands");
+}else{
+    for(let i=1; i <= fois; i++){
+        console.log(i + " -> "+ i*2);
+    }
+}
