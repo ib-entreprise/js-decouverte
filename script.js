@@ -69,22 +69,34 @@
 // }
 
  
-console.log("********** EXECRICE 5 **********************");
+// console.log("********** EXECRICE 5 **********************");
+// let nombre = prompt("Choisissez un nombre ");
+// let PairOrImpair = prompt("Pair taper '0' pour impair tappez '1 ");
+// if(PairOrImpair == 0){
+//     for(let i=0; i<= nombre; i++){
+//         if(i % 2 == 0){
+//             console.log(i);
+//         }
+//     }
+// }else if(PairOrImpair == 1){
+//     for(let i=0; i<= nombre; i++){
+//         if(!( i % 2 == 0)){
+//             console.log(i);
+//         }
+//     }
+// }else{
+//     console.log("erreur de saisir. merci de relire les consignes !");
+// }
 
-let nombre = prompt("Choisissez un nombre ");
-let PairOrImpair = prompt("Pair taper '0' pour impair tappez '1 ");
-if(PairOrImpair == 0){
-    for(let i=0; i<= nombre; i++){
-        if(i % 2 == 0){
-            console.log(i);
-        }
-    }
-}else if(PairOrImpair == 1){
-    for(let i=0; i<= nombre; i++){
-        if(!( i % 2 == 0)){
-            console.log(i);
-        }
-    }
-}else{
-    console.log("erreur de saisir. merci de relire les consignes !");
+console.log("********** EXECRICE 6 **********************");
+let nmbrePiramid = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+nmbrePiramid= parseInt(nmbrePiramid);
+for(let i =1; i<= nmbrePiramid; i++){     
+        let start = '*';
+        result = start.repeat(i);
+        let space =' ';
+        let totalspace = space.repeat(nmbrePiramid - i);
+        console.log(totalspace, result);
+     
 }
+ 
