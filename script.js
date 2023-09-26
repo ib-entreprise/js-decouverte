@@ -69,20 +69,17 @@
 // }
 
  
-console.log("********** EXECRICE 5 **********************");
-let nombre = prompt("Choisissez un nombre ");
-let PairOrImpair =   prompt("Pair taper '0' pour impair tappez '1 ");
-for(let i=0; i<= nombre; i++){    
-    if(i % 2 == 0 && PairOrImpair == 0){
-        console.log(i);
-    }
-    if( !(i % 2 == 0) && PairOrImpair == 1){
-        console.log(i);
-    }
-}
- 
-
-  
+// console.log("********** EXECRICE 5 **********************");
+// let nombre = prompt("Choisissez un nombre ");
+// let PairOrImpair =   prompt("Pair taper '0' pour impair tappez '1 ");
+// for(let i=0; i<= nombre; i++){    
+//     if(i % 2 == 0 && PairOrImpair == 0){
+//         console.log(i);
+//     }
+//     if( !(i % 2 == 0) && PairOrImpair == 1){
+//         console.log(i);
+//     }
+// }   
 
 // console.log("********** EXECRICE 6 **********************");
 // let nmbrePiramid = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
@@ -140,12 +137,12 @@ for(let i=0; i<= nombre; i++){
 // console.log(fact(2));
 // console.log(fact(1));
 
-// console.log("********** EXECRICE 9 **********************");
-// let chaine  = prompt("donnez votre chaine de caractere");
-// function removeFirstAndLastCaracter(chaine){
-//    let newChaine = chaine.slice(1);
-//    let chaine2 = newChaine.slice(0,-1);
-//     return chaine2;
-// }
+console.log("********** EXECRICE 9 **********************");
+let chaine  = prompt("donnez votre chaine de caractere");
+function removeFirstAndLastCaracter(chaine){
+   let newChaine = chaine.slice(1);
+   let chaine2 = newChaine.slice(0,-1);
+    return chaine2;
+}
 
-// console.log(removeFirstAndLastCaracter(chaine));
+console.log(removeFirstAndLastCaracter(chaine));
