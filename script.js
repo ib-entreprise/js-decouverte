@@ -69,26 +69,18 @@
 // }
 
  
-// console.log("********** EXECRICE 5 **********************");
-// let nombre = prompt("Choisissez un nombre ");
-// let PairOrImpair =   prompt("Pair taper '0' pour impair tappez '1 ");
-// let pairNumber = [];
-// let impairNumber = [];
-// for(let i=0; i<= nombre; i++){
-//     if(i % 2 == 0){
-//         pairNumber.push(i);         
-//     }else{
-//         impairNumber.push(i);
-//     }
-// }
-// if(PairOrImpair == 0){
-//     console.table(pairNumber);
-// } 
-// else if(PairOrImpair == 1){
-//     console.table(impairNumber);
-// }else{
-//     console.log("choix invalid");
-// }
+console.log("********** EXECRICE 5 **********************");
+let nombre = prompt("Choisissez un nombre ");
+let PairOrImpair =   prompt("Pair taper '0' pour impair tappez '1 ");
+for(let i=0; i<= nombre; i++){    
+    if(i % 2 == 0 && PairOrImpair == 0){
+        console.log(i);
+    }
+    if( !(i % 2 == 0) && PairOrImpair == 1){
+        console.log(i);
+    }
+}
+ 
 
   
 
@@ -109,37 +101,51 @@
 
 
 // console.log("********** EXECRICE 7 **********************");
-// const date = new Date();
-// let moisEnCours = date.getMonth() + 1; 
-// if(moisEnCours <10){
-//     moisEnCours = "0" + moisEnCours;
-// }
+
 // let aniversaire = prompt("votre jour de naissance"); 
-// let moisAniversaire = (aniversaire.charAt(3)+ aniversaire.charAt(4));
-
-//  (moisAniversaire == moisEnCours) ? console.log("joyeux aniversaire ! tu obtiens une prom de 30 % sur tous les articles" ) :
-//   console.log("En ce moment, unepromo de 15% sur tous les articles");
 
 
+//   function getPromotion(aniversaire){
+//     const date = new Date();
+//     let moisEnCours = date.getMonth() + 1; 
+//     if(moisEnCours <10){
+//         moisEnCours = "0" + moisEnCours;
+//     }
+//     let moisAniversaire = (aniversaire.charAt(3)+ aniversaire.charAt(4));
+//     (moisAniversaire == moisEnCours) ? console.log("joyeux aniversaire ! tu obtiens une prom de 30 % sur tous les articles" ) :
+//     console.log("En ce moment, unepromo de 15% sur tous les articles");
 
-console.log("********** EXECRICE 8 **********************");
-let chooseNumber = prompt("De quel nombre veux-tu calculer le factoriel");
-function fact(chooseNumber){
-    if(chooseNumber < 0){
-        return "impossible";
-    }else if(chooseNumber === 0 || chooseNumber ===1){
-        return 1
-    }else{
-        let result =1;
-        for (let i = 2; i <= chooseNumber; i++) {
-            result *= i;
-        }
-        return result
-    }
-}
-console.log(fact(chooseNumber));
-console.log(fact(4));
-console.log(fact(6));
-console.log(fact(8));
-console.log(fact(2));
-console.log(fact(1));
+//   }
+//  getPromotion(aniversaire);
+
+// console.log("********** EXECRICE 8 **********************");
+// let chooseNumber = prompt("De quel nombre veux-tu calculer le factoriel");
+// function fact(chooseNumber){
+//     if(chooseNumber < 0){
+//         return "impossible";
+//     }else if(chooseNumber === 0 || chooseNumber ===1){
+//         return 1
+//     }else{
+//         let result =1;
+//         for (let i = 2; i <= chooseNumber; i++) {
+//             result *= i;
+//         }
+//         return result
+//     }
+// }
+// console.log(fact(chooseNumber));
+// console.log(fact(4));
+// console.log(fact(6));
+// console.log(fact(8));
+// console.log(fact(2));
+// console.log(fact(1));
+
+// console.log("********** EXECRICE 9 **********************");
+// let chaine  = prompt("donnez votre chaine de caractere");
+// function removeFirstAndLastCaracter(chaine){
+//    let newChaine = chaine.slice(1);
+//    let chaine2 = newChaine.slice(0,-1);
+//     return chaine2;
+// }
+
+// console.log(removeFirstAndLastCaracter(chaine));
