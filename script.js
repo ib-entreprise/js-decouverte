@@ -108,17 +108,38 @@
 // }
 
 
-console.log("********** EXECRICE 7 **********************");
-const date = new Date();
-let moisEnCours = date.getMonth() + 1; 
-if(moisEnCours <10){
-    moisEnCours = "0" + moisEnCours;
+// console.log("********** EXECRICE 7 **********************");
+// const date = new Date();
+// let moisEnCours = date.getMonth() + 1; 
+// if(moisEnCours <10){
+//     moisEnCours = "0" + moisEnCours;
+// }
+// let aniversaire = prompt("votre jour de naissance"); 
+// let moisAniversaire = (aniversaire.charAt(3)+ aniversaire.charAt(4));
+
+//  (moisAniversaire == moisEnCours) ? console.log("joyeux aniversaire ! tu obtiens une prom de 30 % sur tous les articles" ) :
+//   console.log("En ce moment, unepromo de 15% sur tous les articles");
+
+
+
+console.log("********** EXECRICE 8 **********************");
+let chooseNumber = prompt("De quel nombre veux-tu calculer le factoriel");
+function fact(chooseNumber){
+    if(chooseNumber < 0){
+        return "impossible";
+    }else if(chooseNumber === 0 || chooseNumber ===1){
+        return 1
+    }else{
+        let result =1;
+        for (let i = 2; i <= chooseNumber; i++) {
+            result *= i;
+        }
+        return result
+    }
 }
-let aniversaire = prompt("votre jour de naissance"); 
-let moisAniversaire = (aniversaire.charAt(3)+ aniversaire.charAt(4));
-
- (moisAniversaire == moisEnCours) ? console.log("joyeux aniversaire ! tu obtiens une prom de 30 % sur tous les articles" ) :
-  console.log("En ce moment, unepromo de 15% sur tous les articles");
-
-
-
+console.log(fact(chooseNumber));
+console.log(fact(4));
+console.log(fact(6));
+console.log(fact(8));
+console.log(fact(2));
+console.log(fact(1));
