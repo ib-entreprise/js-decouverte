@@ -203,4 +203,16 @@ originalText.addEventListener("keyup", (e)=>{
       carre.textContent = Math.pow( number.value,2);      
       cube.textContent = Math.pow( number.value,3);         
  });
- 
+
+// ********** exo 4 **********
+let exo4 = document.querySelector('#exo4');
+let smallImages = exo4.querySelectorAll('#smallImages img');
+let bigImage = exo4.querySelector('#bigImage');
+let img = document.createElement('img');
+smallImages.forEach(image  =>{
+   image.addEventListener('click', (e) =>{      
+      img.setAttribute('src',image.getAttribute('src'));
+      bigImage.appendChild(img);      
+   });
+   
+});
