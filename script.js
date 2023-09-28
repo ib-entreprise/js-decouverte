@@ -183,11 +183,24 @@
 // DOM
 
 
-// exo 1
-
-
-$originalText = document.querySelector('.originalText');
-$copiedText = document.querySelector('.copiedText');
-$originalText.addEventListener("keyup", (e)=>{
-   $copiedText.value=$originalText.value;
+// ********** exo 1 **********
+let originalText = document.querySelector('.originalText');
+// console.log(originalText);
+let copiedText = document.querySelector('.copiedText');
+originalText.addEventListener("keyup", (e)=>{
+   copiedText.value=originalText.value;
 });
+
+// ********** exo 2 **********
+ const exo2 = document.querySelector('#exo2');
+ let number = exo2.querySelector('.number');
+
+ let nombre = exo2.querySelector('#nombre');
+ let carre = exo2.querySelector('#carre');
+ let cube = exo2.querySelector('#cube');
+ number.addEventListener("keyup",(e)=>{
+   nombre.textContent = number.value; 
+      carre.textContent = Math.pow( number.value,2);      
+      cube.textContent = Math.pow( number.value,3);         
+ });
+ 
