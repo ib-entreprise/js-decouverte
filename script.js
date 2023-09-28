@@ -72,14 +72,13 @@
 // console.log("********** EXECRICE 5 **********************");
 // let nombre = prompt("Choisissez un nombre ");
 // let PairOrImpair =   prompt("Pair taper '0' pour impair tappez '1 ");
-// for(let i=0; i<= nombre; i++){    
-//     if(i % 2 == 0 && PairOrImpair == 0){
+// if(PairOrImpair == 0 || PairOrImpair == 1){
+//     // console.log(PairOrImpair);
+//     for(let i=PairOrImpair; i<= nombre; i+=2){            
 //         console.log(i);
 //     }
-//     if( !(i % 2 == 0) && PairOrImpair == 1){
-//         console.log(i);
-//     }
-// }   
+// }
+   
 
 // console.log("********** EXECRICE 6 **********************");
 // let nmbrePiramid = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
@@ -137,12 +136,58 @@
 // console.log(fact(2));
 // console.log(fact(1));
 
-console.log("********** EXECRICE 9 **********************");
-let chaine  = prompt("donnez votre chaine de caractere");
-function removeFirstAndLastCaracter(chaine){
-   let newChaine = chaine.slice(1);
-   let chaine2 = newChaine.slice(0,-1);
-    return chaine2;
-}
+// console.log("********** EXECRICE 9 **********************");
+// let chaine  = prompt("donnez votre chaine de caractere");
+// function removeFirstAndLastCaracter(chaine){
+//    let newChaine = chaine.slice(1);
+//    let chaine2 = newChaine.slice(0,-1);
+//     return chaine2;
+// }
 
-console.log(removeFirstAndLastCaracter(chaine));
+// console.log(removeFirstAndLastCaracter(chaine));
+
+
+
+// const entrepreneurs = [
+//     { first: 'Steve', last: 'Jobs', year: 1955 },
+//     { first: 'Oprah', last: 'Winfrey', year: 1954 },
+//     { first: 'Bill', last: 'Gates', year: 1955 },
+//     { first: 'Sheryl', last: 'Sandberg', year: 1969 },
+//     { first: 'Mark', last: 'Zuckerberg', year: 1984 },
+//     { first: 'Beyonce', last: 'Knowles', year: 1981 },
+//     { first: 'Jeff', last: 'Bezos', year: 1964 },
+//     { first: 'Diane', last: 'Hendricks', year: 1947 },
+//     { first: 'Elon', last: 'Musk', year: 1971 },
+//     { first: 'Marissa', last: 'Mayer', year: 1975 },
+//     { first: 'Walt', last: 'Disney', year: 1901 },
+//     { first: 'Larry', last: 'Page', year: 1973 },
+//     { first: 'Jack', last: 'Dorsey', year: 1976 },
+//     { first: 'Evan', last: 'Spiegel', year: 1990 },
+//     { first: 'Brian', last: 'Chesky', year: 1981 },
+//     { first: 'Travis', last: 'Kalanick', year: 1976 },
+//     { first: 'Marc', last: 'Andreessen', year: 1971 },
+//     { first: 'Peter', last: 'Thiel', year: 1967 }
+//   ];
+
+//   entrepreneurs.forEach(item =>{
+//      if(item.year >= 1970 && item.year < 1980){
+//         // console.log(item);
+//      }
+//     //  console.log(item.first +" "+ item.last);
+
+//      console.log( Date()  );
+//   });
+  
+
+
+// DOM
+
+
+// exo 1
+
+
+$originalText = document.querySelector('.originalText');
+$copiedText = document.querySelector('.copiedText');
+$originalText.addEventListener("keyup", (e)=>{
+   $copiedText.value=$originalText.value;
+});
