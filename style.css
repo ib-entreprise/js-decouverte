@@ -1,0 +1,51 @@
+section{
+    margin: 100px 30px;
+}
+
+#monCareeBlue{
+    background-color: blue;
+    width: 100px;
+    height: 80px;
+    color: white;
+}
+button{
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 50px;
+    border:solid 3px ;
+}
+.droite{
+    margin-left: 200px;
+}
+.gauche{
+    margin-right: 200px;
+}
+.haut{
+    margin-bottom: 200px;
+}
+
+#spoiler p span{ 
+    display: none;
+    color: blue;
+} 
+
+.hide{
+    display: 'block';
+}
+
+.tab-content{
+    /* height: 100px; */
+    background-color:aliceblue;
+    padding: 20px;
+}
+#carreVert {
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+}
+
+#maVoiture{
+    
+}

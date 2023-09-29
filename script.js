@@ -184,35 +184,139 @@
 
 
 // ********** exo 1 **********
-let originalText = document.querySelector('.originalText');
-// console.log(originalText);
-let copiedText = document.querySelector('.copiedText');
-originalText.addEventListener("keyup", (e)=>{
-   copiedText.value=originalText.value;
-});
+// let originalText = document.querySelector('.originalText');
+// // console.log(originalText);
+// let copiedText = document.querySelector('.copiedText');
+// originalText.addEventListener("keyup", (e)=>{
+//    copiedText.value=originalText.value;
+// });
 
-// ********** exo 2 **********
- const exo2 = document.querySelector('#exo2');
- let number = exo2.querySelector('.number');
+// // ********** exo 2 **********
+//  const exo2 = document.querySelector('#exo2');
+//  let number = exo2.querySelector('.number');
 
- let nombre = exo2.querySelector('#nombre');
- let carre = exo2.querySelector('#carre');
- let cube = exo2.querySelector('#cube');
- number.addEventListener("keyup",(e)=>{
-   nombre.textContent = number.value; 
-      carre.textContent = Math.pow( number.value,2);      
-      cube.textContent = Math.pow( number.value,3);         
- });
+//  let nombre = exo2.querySelector('#nombre');
+//  let carre = exo2.querySelector('#carre');
+//  let cube = exo2.querySelector('#cube');
+//  number.addEventListener("keyup",(e)=>{
+//    nombre.textContent = number.value; 
+//       carre.textContent = Math.pow( number.value,2);      
+//       cube.textContent = Math.pow( number.value,3);         
+//  });
 
-// ********** exo 4 **********
-let exo4 = document.querySelector('#exo4');
-let smallImages = exo4.querySelectorAll('#smallImages img');
-let bigImage = exo4.querySelector('#bigImage');
-let img = document.createElement('img');
-smallImages.forEach(image  =>{
-   image.addEventListener('click', (e) =>{      
-      img.setAttribute('src',image.getAttribute('src'));
-      bigImage.appendChild(img);      
-   });
+// // ********** exo 3 **********
+// let button = document.querySelector('button');
+// button.addEventListener('click', (e)=>{
+//    const rand = Math.floor(Math.random() * 4) + 1;
+//    deplacerMonCarreBlue(rand)
+//          // monCareeBlue.style.marginLeft = '200px';  
+             
+// });
+// function deplacerMonCarreBlue(rand){
+// let monCareeBlue = document.querySelector('#monCareeBlue');
+//    alert(rand);
+//    if(rand === 1){
+//       monCareeBlue.style.marginLeft = '200px';  
+//    }else if(rand === 2){
+//       monCareeBlue.style.marginBottom = '200px';  
+//    }else if(rand === 3){
+//       monCareeBlue.style.marginTop = '200px';  
+//    } else if(rand === 4){
+//       monCareeBlue.style.marginRight = '200px';  
+//    }         
+// }
+// // ********** exo 4 **********
+// let exo4 = document.querySelector('#exo4');
+// let smallImages = exo4.querySelectorAll('#smallImages img');
+// let bigImage = exo4.querySelector('#bigImage');
+// let img = document.createElement('img');
+// smallImages.forEach(image  =>{
+//    image.addEventListener('click', (e) =>{      
+//       img.setAttribute('src',image.getAttribute('src'));
+//       bigImage.appendChild(img);      
+//    });
    
+// });
+
+
+// // ********** exo Bonus **********
+
+// showSpoiler.addEventListener('click', (e) =>{
+//    spoiler = document.querySelector('#spoiler p span ');   
+//    spoiler.classList.toggle("hide");
+// });
+
+// DOM2 exo 2
+let Dom2Exo2 = document.querySelector('#Dom2Exo2');
+let firstTabContainer = Dom2Exo2.querySelector('.firstTabContainer');
+let secondTabContainer = Dom2Exo2.querySelector('.secondTabContainer');
+let thirdTabContainer = Dom2Exo2.querySelector('.thirdTabContainer');
+
+let firstTab = Dom2Exo2.querySelector('#firstTab');
+let secondTab = Dom2Exo2.querySelector('#secondTab');
+let thirdTab = Dom2Exo2.querySelector('#thirdTab');
+
+secondTabContainer.style.display = 'none';
+thirdTabContainer.style.display = 'none';
+
+firstTab.addEventListener('click',(e)=>{ 
+  hideAllContentTab();
+   firstTabContainer.style.display = 'block';
 });
+
+secondTab.addEventListener('click',(e)=>{
+   hideAllContentTab();
+   secondTabContainer.style.display = 'block';   
+});
+
+thirdTab.addEventListener('click',(e)=>{
+   hideAllContentTab();
+   thirdTabContainer.style.display = 'block';
+});
+function hideAllContentTab(){
+
+   secondTabContainer.style.display = 'none';
+   thirdTabContainer.style.display = 'none';
+   firstTabContainer.style.display = 'none';
+}
+
+// DOM2 exo 4
+let dom2Exo4 = document.querySelector('#dom2Exo4');
+let maVoiture = dom2Exo4.querySelector('#maVoiture');
+let maVoitureHaut = dom2Exo4.querySelector('#maVoitureHaut');
+let maVoitureGauche = dom2Exo4.querySelector('#maVoitureGauche');
+let maVoitureDroite = dom2Exo4.querySelector('#maVoitureDroite');
+let maVoitureBas = dom2Exo4.querySelector('#maVoitureBas');
+ 
+maVoitureGauche.style.display= 'none';
+maVoitureDroite.style.display= 'none';
+maVoitureHaut.style.display= 'none';
+maVoitureBas.style.display= 'none';
+
+document.addEventListener('keyup', (e)=>{
+   if (e.keyCode === 90) {         
+      hideAllCar();
+      maVoitureDroite.style.display= 'block';
+   } else if (e.keyCode === 81) {         
+      hideAllCar();
+      maVoitureHaut.style.display= 'block';
+   } else if (e.keyCode === 83) {         
+      hideAllCar();
+      maVoitureGauche.style.display= 'block';
+   } else if (e.keyCode === 68) {         
+      hideAllCar();
+      maVoitureBas.style.display= 'block';
+   }
+   else{
+      hideAllCar();
+      maVoiture.style.display= 'block';
+   }
+});
+
+function hideAllCar(){
+   maVoitureGauche.style.display= 'none';
+   maVoitureDroite.style.display= 'none';
+   maVoitureHaut.style.display= 'none';
+   maVoitureBas.style.display= 'none';
+   maVoiture.style.display ='none';
+}
